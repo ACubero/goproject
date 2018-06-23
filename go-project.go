@@ -2,14 +2,17 @@ package main
 
 import (
 	"fmt"
-	"os"
+	"log"
+	"os/exec"
 )
 
 func main() {
-	os.Chdir("C:/Users/Lenovo/Projects")
 
-	mydir, err := os.Getwd()
-	if err == nil {
-		fmt.Println(mydir)
+	cmd := exec.Command("C:\\Users\\Lenovo\\Projects\\go\\goproject\\goproject\\mycd.bat")
+	thiserr := cmd.Run()
+	if thiserr != nil {
+		log.Fatal(thiserr)
+		fmt.Println(thiserr)
 	}
+
 }

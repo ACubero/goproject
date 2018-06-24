@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	fmt.Println("Este mensaje nos alerta de que hemos entrado en el programa")
+	comentario := "Este es mi comentario inicial"
+	fmt.Println(comentario)
 	cmd := exec.Command("C:\\Users\\Lenovo\\Projects\\go\\goproject\\goproject\\mycd.bat")
 	thiserr := cmd.Run()
 	if thiserr != nil {
@@ -15,4 +16,5 @@ func main() {
 	}
 	//Comentario
 	fmt.Println("Final")
+	fmt.Println("Y salimos del programa")
 }

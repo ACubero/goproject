@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-
+	comentario := "Este es mi comentario inicial"
+	fmt.Println(comentario)
 	cmd := exec.Command("C:\\Users\\Lenovo\\Projects\\go\\goproject\\goproject\\mycd.bat")
 	thiserr := cmd.Run()
 	if thiserr != nil {

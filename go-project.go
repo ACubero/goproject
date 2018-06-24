@@ -15,4 +15,5 @@ func main() {
 	}
 	//Comentario
 	fmt.Println("Final")
+	fmt.Println("Y salimos del programa")
 }
